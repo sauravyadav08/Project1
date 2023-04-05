@@ -1,0 +1,155 @@
+<!--This file is saved by name of "index". Because the first file
+that is saved in server is index file. So, when user will locate
+our webaddress by URL then the first file that is opened on browser
+is index file-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rao Shab 😎 </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    h2{
+       color:brown;
+    }
+    </style>
+</head>
+<body>
+ <!--html doesnot consider spaces and moving to next line by enter-->
+    <h1>Ram Ram bhai sabko<br>k dhang h tham sab ka<br></h1>
+        <h1 style="color: blueviolet;">Welcome to apni kaksha</h1> <!--A way of linking CSS with HTML-->
+        <!--Dispay a horizontal line by <hr> tag-->
+    <hr>
+    <!--Using Entities-->
+    <h1>&lt;h1&gt;</h1>
+    <!--Use of <p> tag-->
+    <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Ipsa <s>similique</s> minus <i>minima nulla,</i> repudiandae <em>labore</em> laudantium nihil culpa corrupti animi eum <small>itaque odio nam officia necessitatibus eaque </small> sapiente, soluta facere reiciendis cupiditate quaerat repellendus nostrum debitis fuga. Animi voluptatem aut cum quasi, ea quam voluptatum sapiente maxime,10 <sup> 2 </sup> nobis eius 10<sub>2</sub> soluta?</p>
+    <!--Unordered List-->
+    <hr>
+    <h1 style="colour: blueviolet"> Shopping List</h1>
+    <ul><!--The type attribute doesnot work in unordered list-->
+        <li>Milk</li>
+        <li>Butter</li>
+        <li>Jam</li>
+    </ul>
+    <!--Ordered List-->    
+    <hr>
+    <h1>Maggie Reciepe</h1>
+    <ol type="A">
+        <li>Boil Water</li>
+        <li>Put raw noodles in it</li>
+        <!--Example of nesting-->
+        <li>Add masala and some raw vegetables to it like:-</li>
+        <ul>
+          <li>Tomato</li>
+          <li>pea</li>
+          <li>corriender</li>
+        </ul>
+        <li>Cook for two minutes</li>
+        <li>Your maggie is ready now</li>
+    </ol>
+    <!--URL and hyperlink-->
+    <hr>
+    <a href="https://www.google.com" target="_blank">Google</a> <!--This is an absolute URL because here we are giving link of an external webpage(jo hmara nhi h). Also in absolute URL we need to write https://www. Now target attribute is used to open the webpage of google in new tab, because without this attribut e the  web page of google will open in the same tab. -->
+    <hr>
+    <a href="page2.html" target="_blank">Page2</a>  <!--Tis a relative URL because we are linking an internal webpage or a local webpage here. So, we didn't use https://www. here. One more thing to note here is that we linked only by filename because both the files-"index file and page2 file are in same folder". If two files are in different folders then we will write folder name also. Lets see ahead how to do this. -->
+    <br>
+    <a href="Camera/IMG_20180206_130630.jpg" target="_blank">bhai</a>
+    <br>
+    <strong><em><a href ="https://www.youtube.com/" target="_blank">Youtube</strong></a></em>
+    <!--Let's see how to attach image-->
+    <hr>
+    <img src="Camera/WIN_20210204_05_12_59_Pro.jpg" alt="Image not Processed" width="320">
+    <!--Let's see how to attach video-->
+    <hr>
+    <audio controls="" preload="none">
+        <source src="https://cdnsongs.com/music/data/Haryanvi/202111/Foxy/128/Foxy_1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        </audio>
+    <!--iframe or Embedding-->
+    <hr>
+    <!--Embedding a youtube video-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0ZumpxKQm88?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--Embedding a website-->
+    <hr>
+    <iframe src="page2.html"></iframe>  <!-- WE can also add https://www.apnikaksha.com(an absolute URL)  check by adding it-->
+
+    <!--Tables-->
+    <table cellspacing="30">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Theory</th>
+                <th>Practicals</th>
+                <th>Total Marks</th>
+                <th>Grades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Chemistry</td>
+                <td> 75</td>
+                <td> -</td>
+                <td> 75</td>
+                <td> A1</td>
+            </tr>
+
+            <tr>
+                <td> Hindi</td>
+                <td> 75</td>
+                <td> 16</td>
+                <td> 91</td>
+                <td> A2</td>
+            </tr>
+
+            <tr>
+                <td> English</td>
+                <td> 75</td>
+                <td> -</td>
+                <td> 90</td>
+                <td> B1</td>
+            </tr>
+
+            <tr>
+                <td> Maths</td>
+                <td> 77</td>
+                <td> 20</td>
+                <td> 97</td>
+                <td> A1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Result: Pass</th> <!--This will show the result in first column. So to show this in middle we use colspan as follows:
+            <th colspan="5"> Result:Pass</th>  5 means total 5 columns are there-->
+        </tfoot>
+    </table>
+    <hr>
+    <table cellspacing="30">
+        <thead> 
+                <tr>
+                    <th>Hobbies</th>
+                    <th>Reviews</th>
+                    <th>Hobbies</th>
+                    <th>Reviews</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Thinking</td>
+                <td>🌟🌟🌟🌟</td>
+                <td>Exerise</td>
+                <td>🌟🌟🌟🌟</td>
+            </tr>
+            <tr>
+                <td>Music</td>
+                <td>🌟🌟🌟🌟</td>
+                <td>Discussions</td>
+                <td>🌟🌟🌟</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
